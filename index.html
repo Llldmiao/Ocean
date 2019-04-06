@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>计算机设计大赛</title>
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+        <script src="./scripts/vue.js"></script>
+
+    </head>
+    
+    <body>
+        <div id="root">
+        <div >
+            <h1>page1</h1>
+            <img src="./images/page1.jpg" alt="place-holder" @click='handleClick'/>
+        </div>
+        <div >
+            <h1>page2</h1>
+            <img src="./images/page2.jpg" alt="place-holder" @click='handleClick'/>
+        </div>
+        <div >
+            <h1>page3</h1>
+            <img src="./images/page3.jpg" alt="place-holder" @click='handleClick'/>
+        </div>
+        <div >
+            <h1>page4</h1>
+            <img src="./images/page4.jpg" alt="place-holder" @click='handleClick'/>
+        </div>
+        </div>
+    
+        <script>
+          new Vue({
+              el: '#root',
+              methods: {
+                  handleClick: function () {
+                      alert('hello')
+
+                  }
+              },
+          })
+        </script>
+    </body>
+</html>
